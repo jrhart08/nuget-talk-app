@@ -7,9 +7,12 @@ After publishing our NdashLib project (detailed on its README), we have 2 method
 
 ### Option 1 - dotnet CLI
 
-```ps1
+```bash
 # from solution folder
 dotnet add MyConsoleApp package NdashLib --source C:\nuget-repo
+
+# from project folder
+dotnet add package NdashLib --source C:\nuget-repo
 ```
 
 ### Option 2 - Visual Studio
@@ -19,4 +22,4 @@ dotnet add MyConsoleApp package NdashLib --source C:\nuget-repo
     - Add a new source
       - Name: `Local`
       - Source: `C:\nuget-repo`
-2. Install `NdashLib` NuGet package using your favorite method (via the Package Manager Console or the "Manage Packages" window)
+2. Install our `NdashLib` NuGet package using your favorite method (via the Package Manager Console or the "Manage Packages" window)
